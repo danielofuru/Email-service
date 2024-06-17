@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent any 
     
     environment {
         // Define the recipients as an environment variable for ease of reuse
