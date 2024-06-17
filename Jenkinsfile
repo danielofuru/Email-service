@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // Define the recipients as an environment variable for ease of reuse
-        RECIPIENTS = 'danielofurutech@gmail.com, goodnessm508@gmail.com.com, guddytechs@gmail.com'
+        RECIPIENTS = 'danielofurutech@gmail.com, goodnessm508@gmail.com.com, guddytechs@gmail.com, estheronyinye011@gmail.com'
     }
     
     stages {
@@ -38,7 +38,8 @@ pipeline {
                     to: "${env.RECIPIENTS}",
                     subject: "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
                     body: """<p>Build Status: ${buildStatus}</p>
-                             <p>Check the build details at: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>"""
+                             <p>You can check the build details at: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>"""
+                    <p>This is a project from the Dev-Sec-Ops team, and i am glad it was successful Thanks</p>
                 )
             }
         }
