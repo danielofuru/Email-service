@@ -39,6 +39,7 @@ pipeline {
                     subject: "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
                     body: """<p>Build Status: ${buildStatus}</p>
                              <p>This ia a job from my Dev-Sec-Ops team and i am glad it works thanks guys</p>
+                             <p>I don run am
                              <p>You can check the build details at: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>"""
                 )
             }
